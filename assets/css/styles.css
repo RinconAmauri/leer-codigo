@@ -114,3 +114,27 @@ h6 {
   color: var(--black);
   text-shadow: none;
 }
+
+/* Agregue estilos para los datos de usuario en la pagina */
+
+.name, .blog, .location {
+  color: white;
+  font-size: 2.4rem;
+  margin: 1rem 2rem;
+  text-shadow: var(--text-shadow);
+}
+
+.name::before {
+  content: "Nombre: ";
+  font-weight: bold;
+}
+
+.blog::before {
+  content: "Blog: ";
+  font-weight: bold;
+}
+
+.location::before {
+  content: "Ubicación: ";
+  font-weight: bold;
+}
