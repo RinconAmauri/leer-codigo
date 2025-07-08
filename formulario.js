@@ -1,10 +1,10 @@
-var formulario = document.querySelector("#form")
+var formulario = document.querySelector(".formulario") //cambie el #form por la clase de la etiqueta form .formulario
 
 formulario.onsubmit = function(e) {
 
-  e.prevent();
+  e.preventDefault(); //el metodo estaba mal, le faltaba el Default.
   
-  var n = formulario.elements[0]
+   n = formulario.elements[0]
   var e = formulario.elements[1]
   var na = formulario.elements[2]
 
